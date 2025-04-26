@@ -2,9 +2,9 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GoGo</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -29,7 +29,7 @@
         <img src="images/car_rental.jpg" alt="Жінка біля авто з ключем" class="full-width-image">
 
 
-        <div class="info">
+        <div class="info" id="carsharing">
             <img src="images/Wie_funktioniert_Carsharing.png" class="bg-img" alt="" />
             <div class="content">
               <h2 class="Carsharing-easy">Каршерінг з GoGo – це легко та швидко</h2>
@@ -85,7 +85,7 @@
               </div>
             </div>
           
-            <button class="cta-button catalog-button">Каталог авто</button>
+            <a href="catalog-car.html" class="catalog1-button">Каталог авто</a>
           </section>
 
           <section class="how-to-use">
@@ -120,6 +120,28 @@
               <section class="reviews">
                 <h2>Відгуки</h2>
                 <div class="review-list">
+
+                  <div class="review-card">
+                    <h3>Остап 23, Київ</h3>
+                    <p>
+                      Пару років тому отримав водійські права, але власне авто ще не купив. 
+                      Затестив GoGo. Є вибір автівок. Знайшов ту, що мені підходить. Депозит для початківців трохи 
+                      вищий, але, думаю, це справедливо. Гроші з депозиту щвидко повернули. Враження від поїздки і 
+                      від самого додатку позитивні
+                    </p>
+
+                  </div>
+                  <div class="review-card">
+                    <h3>Давід 39, Київ</h3>
+                    <p>
+                      Каршерінг у Києві це щось нове) Спочатку було якось дивно відкривати машину через телефон 
+                      без ключа, але згодом звик. Та й ключ, по суті, знаходиться в автобомілі, тому саме керування 
+                      машиною відбувається, як завжди. Короче кажучи, рекомендую спробувати)
+                    </p>
+
+                  </div>
+
+                
                   <div class="review-card">
                     <h3>Вікторія, 33 роки, Київ</h3>
                     <p>
@@ -144,51 +166,47 @@
 
               
               <footer class="footer">
+                <div class="footer-container">
                 <div class="footer-top">
                   <div class="footer-logo">
                     <strong>GoGo</strong>
+                    <div class="footer-socials">
+                      <a href="https://www.facebook.com/?locale=uk_UA" target="_blank"> <i class="fa-brands fa-facebook"></i></a>
+                      <a href="https://ua.linkedin.com/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                      <a href="https://www.youtube.com/" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+                      <a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
                   </div>
-                  <div class="footer-column">
+                  </div>
+                  <div class="footer-column" id="contacts">
                     <h4>Контакти</h4>
                     <p>"Маєш питання? Ми на зв'язку!"</p>
                     <ul>
-                      <li>Телефон: +380 123 456 789</li>
-                      <li>Email: support@carsharing.com</li>
+                      <li>Телефон: +380 050 290 3955</li>
+                      <li>Email: supportGoGo@gmail.com</li>
                       <li>Адреса: вул. Кошиця, 12, Київ</li>
                     </ul>
-                    <button class="contact-button">Написати нам</button>
+                    <a href="https://workspace.google.com/intl/uk/gmail/" class="contact-button" target="_blank">Написати нам </a>
                   </div>
-                  <div class="footer-column">
+                  <div class="footer-column" id="about">
                     <h4>Юридична інформація</h4>
                     <ul>
-                      <li><a href="#">Договір публічної оферти</a></li>
-                      <li><a href="#">Політика обробки персональних даних</a></li>
+                      <li><a href="Footer/public.html">Договір публічної оферти</a></li>
+                      <li><a href="Footer/ policy.html">Політика обробки персональних даних</a></li>
+                      <li><a href="Footer/about-company.html">Про Компанію</a></li>
                     </ul>
                   </div>
                   <div class="footer-column">
                     <h4>Правила</h4>
                     <ul>
-                      <li><a href="#">Стаж і вік</a></li>
-                      <li><a href="#">Зони завершення поїздки</a></li>
-                      <li><a href="#">ПДР та штрафи</a></li>
+                      <li><a href="Footer/age.html">Стаж і вік</a></li>
+                      <li><a href="Footer/ insurance.html">Страховка</a></li>
+                      <li><a href="Footer/fines.html">ПДР та штрафи</a></li>
                     </ul>
                   </div>
                 </div>
+              </div>
               
-                <div class="footer-bottom">
-                  <div class="footer-socials">
-                    <a href="#"><i class="fa-brands fa-facebook"></i></a>
-                    <a href="#"><i class="fa-brands fa-linkedin"></i></a>
-                    <a href="#"><i class="fa-brands fa-youtube"></i></a>
-                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
-                  </div>
-                </div>
-              </footer>
-              
-          
-      
-          
 
-    
+              </footer>
 </body>
 </html>

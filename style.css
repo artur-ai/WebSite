@@ -1,6 +1,13 @@
+html {
+  scroll-behavior: smooth;
+}
+
 body {
-    margin: 0;
-    font-family: sans-serif;
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+  padding: 20px;
+  background-color: #f2f5f9;
+  color: #333;
   }
   
   header {
@@ -43,6 +50,7 @@ body {
     cursor: pointer;
     font-size: 15px;
   }
+  
 
 
   main {
@@ -122,7 +130,7 @@ body {
     line-height: 1.8;
     font-size: 20px;
     max-width: 100%;
-    text-align: left; /* Або left – на твій вибір */
+    text-align: left;
   }
 
   section {
@@ -260,8 +268,10 @@ body {
 
   .reviews {
     background-color: #fff;
-    max-width: 1200px;
-    margin-top: -100;
+    max-width: 1300px;
+    margin-bottom: -5px;
+    margin-top: 20px;
+    border-radius: 12px;
   }
   
   .reviews h2 {
@@ -298,14 +308,20 @@ body {
 
   footer {
     border-top: 2px solid #000;
-    padding-top: 20px;
-    padding-right: 20px;
-    padding-left: 20px;
-    padding-bottom: 0;
+    padding: 2px 2px 0 2px; 
     background-color: #fff;
     font-size: 14px;
     color: #000;
     margin-bottom: 0;
+    width: 100%;
+    box-sizing: border-box;
+  }
+  
+  .footer-container {
+    margin: 0 auto;
+    max-width: 1200px;
+    padding: 0 15px;
+    box-sizing: border-box;
   }
   
   .footer-top {
@@ -362,22 +378,138 @@ body {
   .footer-socials a {
     margin-right: 10px;
     font-size: 18px;
+    display: inline-block;
+    margin-top: 140px;
     color: #000;
   }
   
   .contact-button {
-    background-color: #000;
-    color: #fff;
+    background-color: #000000;
+    color: #ffffff !important;
+    text-decoration: none;
+    display: inline-block;
     border: none;
     padding: 10px 20px;
     font-weight: bold;
-    cursor: pointer;
+    margin-bottom: 20px;
     border-radius: 4px;
+    cursor: pointer;
   }
   
   .contact-button:hover {
-    background-color: #333;
+    background-color: #6f6f6f;
+  }
+
+/* --- Для телефонів --- */
+@media (max-width: 768px) {
+  
+  
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10px 20px;
   }
   
+  nav {
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    gap: 10px;
+  }
   
+  .nav-links {
+    flex-direction: column;
+    width: 100%;
+    gap: 10px;
+  }
+
+  .cta-button {
+    width: 100%;
+    text-align: center;
+  }
+
+  section.hero h1 {
+    font-size: 42px;
+  }
   
+  section.hero p {
+    font-size: 20px;
+  }
+  
+  section.hero .cta-button {
+    width: 100%;
+    padding: 12px 20px;
+    font-size: 16px;
+  }
+
+  .full-width-image {
+    width: 90vw;
+    height: auto;
+  }
+
+  .info {
+    padding: 30px 20px;
+  }
+  
+  .content {
+    font-size: 18px;
+  }
+
+  .car-catalog h2 {
+    font-size: 28px;
+  }
+  
+  .catalog-subtitle {
+    font-size: 18px;
+  }
+  
+  .car-list {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .car-card {
+    width: 90%;
+  }
+
+  .how-to-use h2 {
+    font-size: 28px;
+  }
+
+  .steps-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .reviews h2 {
+    font-size: 36px;
+  }
+  
+  .review-list {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .review-card {
+    width: 90%;
+  }
+
+  .footer-top {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .footer-socials a {
+    margin-top: 20px;
+  }
+
+  .contact-button {
+    width: 100%;
+    text-align: center;
+  }
+}
