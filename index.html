@@ -8,18 +8,19 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <div class="logo">GoGo</div>
-        <nav>
-          <div class="nav-links">
-            <a href="#carsharing">Каршерінг</a>
-            <a href="#about">Про нас</a>
-            <a href="#contacts">Контакти</a>
-          </div>
-          <a href="register.html" class="cta-button">Зареєструватись</a>
-        </nav>
-      </header>
-
+  <header>
+    <div class="logo">GoGo</div>
+    <button class="burger" id="burger">&#9776;</button>
+    <nav id="nav-menu">
+      <div class="nav-links">
+        <a href="#carsharing">Каршерінг</a>
+        <a href="#about">Про нас</a>
+        <a href="#contacts">Контакти</a>
+      </div>
+      <a href="register.html" class="cta-button">Зареєструватись</a>
+    </nav>
+  </header>
+  
       <main>
         <section class="hero">
           <h1>Каршерінг GOGO – авто без турбот!</h1>
@@ -209,4 +210,13 @@
 
               </footer>
 </body>
+<script>
+  const burger = document.getElementById('burger');
+  const nav = document.querySelector('header nav');
+
+  burger.addEventListener('click', () => {
+    nav.classList.toggle('active');
+  });
+</script>
+
 </html>
