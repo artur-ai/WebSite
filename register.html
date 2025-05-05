@@ -15,53 +15,56 @@
       flex-direction: column;
       align-items: center;
     }
-
+  
     header {
       width: 100%;
       background-color: #000000;
       color: white;
-      padding: 15px 0;
+      padding: 15px 10px;
       text-align: center;
     }
-
+  
     .logo {
-      font-size: 30px;
+      font-size: 26px;
       font-weight: bold;
-      margin-left: 10px;
+      margin-left: 20px;
     }
-
+  
     nav .nav-links {
       margin-top: 10px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 10px;
     }
-
+  
     nav .nav-links a {
       color: white;
-      margin: 0 15px;
       text-decoration: none;
-      font-size: 18px;
+      font-size: 16px;
     }
-
+  
     nav .nav-links a:hover {
       text-decoration: underline;
     }
-
-    
+  
     .register-form {
       background-color: white;
-      padding: 30px;
+      padding: 20px;
       border-radius: 8px;
       box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-      width: 100%;
+      width: 90%;
       max-width: 400px;
-      margin-top: 30px;
+      margin: 30px auto;
     }
-
+  
     .register-form h1 {
       text-align: center;
       color: #020304;
       margin-bottom: 20px;
+      font-size: 24px;
     }
-
+  
     .register-form input {
       width: 100%;
       padding: 10px;
@@ -71,11 +74,11 @@
       font-size: 16px;
       background-color: #f9f9f9;
     }
-
+  
     .register-form input[type="file"] {
       background-color: white;
     }
-
+  
     .cta-button {
       background-color: #000000;
       color: white;
@@ -86,31 +89,53 @@
       cursor: pointer;
       width: 100%;
     }
-
+  
     .cta-button:hover {
       background-color: #34495e;
     }
-
+  
     .cta-button:active {
       background-color: #1abc9c;
     }
-
+  
     .success-message {
       display: none;
       text-align: center;
       margin-top: 20px;
       color: green;
-      font-size: 18px;
-    }
-
-    .file-label {
       font-size: 16px;
+    }
+  
+    .file-label {
+      font-size: 14px;
       color: #2c3e50;
       margin-bottom: 5px;
       display: block;
     }
-
+  
+    @media (max-width: 480px) {
+      .logo {
+        font-size: 22px;
+      }
+  
+      .register-form h1 {
+        font-size: 20px;
+      }
+  
+      .register-form input {
+        font-size: 15px;
+      }
+  
+      .cta-button {
+        font-size: 16px;
+      }
+  
+      nav .nav-links a {
+        font-size: 14px;
+      }
+    }
   </style>
+  
 </head>
 <body>
   <header>

@@ -468,7 +468,7 @@ body {
   }
 
   .cta-button {
-    width: 100%;
+    width: 75%;
     text-align: center;
   }
 
@@ -556,5 +556,17 @@ body {
   .contact-button {
     width: 100%;
     text-align: center;
+  }
+
+  .contact1 {
+    margin-top: -100px;
+  }
+
+  .information {
+    margin-top: -40px;
+  }
+
+  .rules {
+    margin-top: -40px;
   }
 }

@@ -8,18 +8,23 @@
   <link rel="stylesheet" href="catalog.css" />
 </head>
 <body>
-  <header>
+  
+  <header class="header">
     <div class="logo">GoGo</div>
-    <nav>
-      <div class="nav-links">
-        <a href="index.html#carsharing">Каршерінг</a>
-        <a href="index.html#about">Про нас</a>
-        <a href="index.html#contacts">Контакти</a>
-      </div>
-      <a href="register.html" class="cta-button">Зареєструватись</a>
-    </nav>
-  </header>
 
+    <nav class="nav" id="navbar">
+      <ul class="nav-links">
+        <li><a href="index.html#carsharing">Каршерінг</a></li>
+        <li><a href="index.html#about">Про нас</a></li>
+        <li><a href="index.html#contacts">Контакти</a></li>
+        <li><a href="register.html" class="cta-button">Зареєструватись</a></li>
+      </ul>
+    </nav>
+
+    <div class="burger" id="burger">
+      <i class="fas fa-bars"></i>
+    </div>
+  </header>
 
   <section class="how-to-use">
     <h2>Як користуватись GoGo</h2>
@@ -318,7 +323,14 @@
         </div>
       </div>
     </footer>
-  
-  
 </body>
+<script>
+  const burger = document.getElementById('burger');
+  const navLinks = document.querySelector('.nav-links');
+
+  burger.addEventListener('click', () => {
+    navLinks.classList.toggle('active');
+  });
+</script>
+
 </html>
